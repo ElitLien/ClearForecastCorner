@@ -1,0 +1,91 @@
+.weather_check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+.weather_description,
+.weather_temp,
+.weather_feels_temp,
+.humidity_percent,
+.cloudy_percent,
+.wind_speed,
+.wind_direction {
+  font-family: "Roboto", sans-serif;
+}
+
+.weather_wind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+.weather_cloudy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+.weather_humidity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+.humidity_percent,
+.cloudy_percent,
+.wind_speed,
+.wind_direction {
+  margin-bottom: 5px;
+}
+
+.current_weather {
+  flex-wrap: wrap;
+  display: flex;
+  row-gap: 5px;
+  flex-direction: row;
+}
+
+.weather_icon,
+.humidity_icon,
+.cloudy_icon,
+.wind_icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.weather_icon:hover,
+.humidity_icon:hover,
+.cloudy_icon:hover,
+.wind_icon:hover {
+  transform: scale(1.1);
+}
+
+.weather_icon,
+.humidity_icon,
+.cloudy_icon,
+.wind_icon {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather_city_name {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wind_speed,
+.wind_direction {
+  text-align: center;
+}

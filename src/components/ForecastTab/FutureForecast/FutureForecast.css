@@ -1,0 +1,19 @@
+.main_block {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.day_1,
+.day_2,
+.day_3 {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f031;
+}
+
+.hour {
+  text-align: center;
+  font-weight: 700;
+}

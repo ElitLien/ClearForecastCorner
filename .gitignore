@@ -1,0 +1,25 @@
+# dependencies
+/.pnp
+.pnp.js
+
+/src/secret_credentials.js
+package-lock.json
+# testing
+/coverage
+
+# production
+/build
+/node_modules
+
+# misc
+# .env
+cors.json
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
