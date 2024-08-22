@@ -9,13 +9,6 @@ import clouds from "../../Icons/clouds.png";
 const CurrentForecast = ({ search, apiKey, weatherIcons }) => {
   const [weatherData, setWeatherData] = useState(null);
 
-  // ,
-  // "devDependencies": {
-  //   "gh-pages": "^6.1.1"
-  // }
-
-  // "homepage": "https://elitlien.github.io/ClearForecastCorner",
-
   const {
     partlyCloudy,
     lightSleet,

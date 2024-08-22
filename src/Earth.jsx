@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/earth.gltf");
+  const { nodes, materials } = useGLTF("./earth/earth.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -14,4 +14,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("./earth.gltf");
+useGLTF.preload("./earth/earth.gltf");

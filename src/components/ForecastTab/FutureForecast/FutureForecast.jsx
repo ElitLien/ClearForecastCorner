@@ -8,10 +8,10 @@ const FutureForecast = ({ search, apiKey, weatherIcons }) => {
   const [futureData, setFutureData] = useState(null);
 
   const fetchForecast = async () => {
-    if (search === "") return;
+    if (search === "") return 0;
     try {
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${search}&days=3&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${search}&days=3&aqi=no&alerts=no`
       );
       setFutureData(response.data);
     } catch (error) {
@@ -52,6 +52,10 @@ const FutureForecast = ({ search, apiKey, weatherIcons }) => {
   useEffect(() => {
     fetchForecast();
   }, [search]);
+
+  useEffect(() => {
+    console.log("Future Data: ", futureData);
+  }, [search]); 
 
   return (
     <div className="main_block">
