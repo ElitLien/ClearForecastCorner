@@ -42,7 +42,7 @@ const CurrentForecast = ({ search, apiKey, weatherIcons }) => {
 
     try {
       const response = await axios.get(
-        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${search}&aqi=no`
+        `${process.env.REACT_APP_API_LINK}/current.json?key=${apiKey}&q=${search}&aqi=no`
       );
       setWeatherData(response.data);
     } catch (error) {
